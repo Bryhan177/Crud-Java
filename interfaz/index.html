@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CRUD Interfaz</title>
+</head>
+<body>
+
+
+    <center><div class="loader">
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        </div></center>
+
+    <div class="container">
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+     </div>
+    <div id="app">
+        <h1>CRUD Interfaz</h1>
+        <div id="students">
+            <!-- Aquí se cargarán los estudiantes -->
+        </div>
+        <div id="form">
+            <input type="text" id="firstName" placeholder="Nombre">
+            <input type="text" id="lastName" placeholder="Apellido">
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <input type="hidden" id="studentId"> <!-- Campo oculto para almacenar el ID del estudiante -->
+            <button id="saveOrUpdateBtn" onclick="saveOrUpdate()">Guardar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
